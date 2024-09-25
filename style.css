@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  height: inherit;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: -1px;
+  position: absolute;
+  margin: 0;
+  top: 10px; /* 距离顶部 */
+  left: 10px; /* 移动到左侧 */
+  color: white;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
+  z-index: 1; /* 确保在其他元素之上 */
+}
+canvas {
+  position: absolute; /* 确保画布在最底层 */
+  top: 0;
+  left: 0;
+  z-index: 0; /* 设置画布的 z-index */
+}
+
+input[type="range"] {
+  width: 200px; /* 设置宽度 */
+  background-color: rgba(255, 255, 255, 0.8); /* 设置背景颜色 */
+  border: none; /* 去掉边框 */
+  border-radius: 5px; /* 设置圆角 */
+  padding: 5px; /* 设置内边距 */
+  z-index: 2; /* 确保在其他元素之上 */
+}
